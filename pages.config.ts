@@ -1,6 +1,12 @@
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
+  easycom: {
+    autoscan: true,
+    custom: {
+      '^wd-(.*)': 'wot-design-uni/components/wd-$1/wd-$1.vue',
+    },
+  },
   pages: [],
   globalStyle: {
     'navigationBarTitleText': 'uni-vitesse',

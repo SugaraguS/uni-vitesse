@@ -13,7 +13,8 @@
     "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
-      "@uni-helper/uni-app-types"
+      "@uni-helper/uni-app-types",
+      "wot-design-uni/global.d.ts"
     ],
     "allowJs": true,
     "strict": true,
