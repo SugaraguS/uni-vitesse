@@ -5,7 +5,7 @@
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
     "dev:custom": "uni -p",
-    "dev:h5": "uni",
+    "dev:h5": "uni -m prod",
     "dev:h5:ssr": "uni --ssr",
     "dev:mp-alipay": "uni -p mp-alipay",
     "dev:mp-baidu": "uni -p mp-baidu",
@@ -57,9 +57,12 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-4010520240507001",
     "@dcloudio/uni-mp-xhs": "3.0.0-alpha-4010520240507001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-4010520240507001",
+    "@uni-helper/axios-adapter": "^1.5.2",
+    "axios": "^1.5.1",
     "pinia": "^2.0.36",
     "vue": "^3.4.27",
     "vue-i18n": "^9.13.1",
+    "vue-request": "^2.0.4",
     "wot-design-uni": "^1.2.25"
   },
   "devDependencies": {

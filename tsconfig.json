@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2017",
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
@@ -29,8 +29,7 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
-    "./auto-imports.d.ts"
+    "src/**/*.vue"
   ],
   "exclude": ["dist", "node_modules"],
 

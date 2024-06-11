@@ -50,6 +50,12 @@ importers:
       '@dcloudio/uni-quickapp-webview':
         specifier: 3.0.0-alpha-4010520240507001
         version: 3.0.0-alpha-4010520240507001(postcss@8.4.38)(rollup@4.18.0)(vue@3.4.27(typescript@5.4.2))
+      '@uni-helper/axios-adapter':
+        specifier: ^1.5.2
+        version: 1.5.2(axios@1.7.2)
+      axios:
+        specifier: ^1.5.1
+        version: 1.7.2
       pinia:
         specifier: ^2.0.36
         version: 2.0.36(typescript@5.4.2)(vue@3.4.27(typescript@5.4.2))
@@ -59,6 +65,9 @@ importers:
       vue-i18n:
         specifier: ^9.13.1
         version: 9.13.1(vue@3.4.27(typescript@5.4.2))
+      vue-request:
+        specifier: ^2.0.4
+        version: 2.0.4(vue@3.4.27(typescript@5.4.2))
       wot-design-uni:
         specifier: ^1.2.25
         version: 1.2.25(vue@3.4.27(typescript@5.4.2))
@@ -2004,6 +2013,11 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
+  '@uni-helper/axios-adapter@1.5.2':
+    resolution: {integrity: sha512-0NUHqVpC2a2KoT855csKhA2nV5bhGtIW9SUSyfZ248PmAsRsrnRjzygEeR/1IDGM6cbHdyAFGAdPtA/mwgC6Dg==}
+    peerDependencies:
+      axios: ^1.5.0
+
   '@uni-helper/eslint-config@0.0.6':
     resolution: {integrity: sha512-9jg1mm4pjV/oj5o22dhHyLyeHcbbCSHjavWaOsHXsoKjtNq2Dnm0RhyXz/gOkfg/d6TsMk9XLtVLKtEILXbo1Q==}
 
@@ -2440,6 +2454,9 @@ packages:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
     engines: {node: '>= 0.4'}
 
+  axios@1.7.2:
+    resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
+
   babel-jest@27.5.1:
     resolution: {integrity: sha512-cdQ5dXjGRd0IBRATiQ4mZGlGlRE8kJpjPOixdNRdT+m3UcNqmYWN6rK6nvtXYfY3D76cb8s/O1Ss8ea24PIwcg==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -2632,10 +2649,6 @@ packages:
 
   check-error@1.0.3:
     resolution: {integrity: sha512-iKEoDYaRmd1mxM90a2OEfWhjsjPpYPuQ+lMYsoxB126+t8fw7ySEO48nmDg5COTjxDI65/Y2OWpeEHk3ZOe8zg==}
-
-  chokidar@3.5.3:
-    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
-    engines: {node: '>= 8.10.0'}
 
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
@@ -3353,11 +3366,24 @@ packages:
   flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
 
+  follow-redirects@1.15.6:
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
 
   form-data@3.0.1:
     resolution: {integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==}
+    engines: {node: '>= 6'}
+
+  form-data@4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
 
   forwarded@0.2.0:
@@ -4075,6 +4101,10 @@ packages:
     resolution: {integrity: sha512-ZvFw1KWS3GVyYBYb7qkmRM/WwL2TQQBxgCK62rlvm4WpVQ23Nb4tYjApUlfjrEGvOs7KHEsmyUn75OHZrJMWPw==}
     engines: {node: '>= 12.13.0'}
 
+  local-pkg@0.4.3:
+    resolution: {integrity: sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==}
+    engines: {node: '>=14'}
+
   local-pkg@0.5.0:
     resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==}
     engines: {node: '>=14'}
@@ -4663,6 +4693,9 @@ packages:
   proxy-addr@2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
+
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
   psl@1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
@@ -5495,6 +5528,17 @@ packages:
       '@vue/composition-api':
         optional: true
 
+  vue-demi@0.14.8:
+    resolution: {integrity: sha512-Uuqnk9YE9SsWeReYqK2alDI5YzciATE0r2SkA6iMAtuXvNTMNACJLJEXNXaEy94ECuBe4Sk6RzRU80kjdbIo1Q==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
   vue-eslint-parser@9.3.2:
     resolution: {integrity: sha512-q7tWyCVaV9f8iQyIA5Mkj/S6AoJ9KBN8IeUSf3XEmBrOtxOZnfTg5s4KClbZBCK3GtnT/+RyCLZyDHuZwTuBjg==}
     engines: {node: ^14.17.0 || >=16.0.0}
@@ -5506,6 +5550,16 @@ packages:
     engines: {node: '>= 16'}
     peerDependencies:
       vue: ^3.0.0
+
+  vue-request@2.0.4:
+    resolution: {integrity: sha512-+Tu5rDy6ItF9UdD21Mmbjiq5Pq6NZSN9juH72hNQTMn1whHh4KZPTKWVLK2YS4nzbuEnPs+82G91AA2Fgd93mg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
 
   vue-router@4.3.2:
     resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
@@ -8180,7 +8234,7 @@ snapshots:
 
   '@stylistic/eslint-plugin-js@1.5.1(eslint@8.57.0)':
     dependencies:
-      acorn: 8.11.2
+      acorn: 8.11.3
       escape-string-regexp: 4.0.0
       eslint: 8.57.0
       eslint-visitor-keys: 3.4.3
@@ -8529,6 +8583,12 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.2.0': {}
+
+  '@uni-helper/axios-adapter@1.5.2(axios@1.7.2)':
+    dependencies:
+      axios: 1.7.2
+      local-pkg: 0.4.3
+      unplugin: 1.10.1
 
   '@uni-helper/eslint-config@0.0.6(@unocss/eslint-plugin@0.60.3(eslint@8.57.0)(typescript@5.4.2))(@vue/compiler-sfc@3.4.27)(eslint@8.57.0)(typescript@5.4.2)(vitest@1.6.0(@types/node@20.12.12)(jsdom@16.7.0)(sass@1.77.2)(terser@5.17.4))':
     dependencies:
@@ -9226,6 +9286,14 @@ snapshots:
 
   available-typed-arrays@1.0.5: {}
 
+  axios@1.7.2:
+    dependencies:
+      follow-redirects: 1.15.6
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+
   babel-jest@27.5.1(@babel/core@7.24.6):
     dependencies:
       '@babel/core': 7.24.6
@@ -9468,18 +9536,6 @@ snapshots:
   check-error@1.0.3:
     dependencies:
       get-func-name: 2.0.2
-
-  chokidar@3.5.3:
-    dependencies:
-      anymatch: 3.1.3
-      braces: 3.0.2
-      glob-parent: 5.1.2
-      is-binary-path: 2.1.0
-      is-glob: 4.0.3
-      normalize-path: 3.0.0
-      readdirp: 3.6.0
-    optionalDependencies:
-      fsevents: 2.3.3
 
   chokidar@3.6.0:
     dependencies:
@@ -10321,11 +10377,19 @@ snapshots:
 
   flatted@3.3.1: {}
 
+  follow-redirects@1.15.6: {}
+
   for-each@0.3.3:
     dependencies:
       is-callable: 1.2.7
 
   form-data@3.0.1:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+
+  form-data@4.0.0:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
@@ -11194,7 +11258,7 @@ snapshots:
 
   jsonc-eslint-parser@2.4.0:
     dependencies:
-      acorn: 8.11.2
+      acorn: 8.11.3
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       semver: 7.5.4
@@ -11275,6 +11339,8 @@ snapshots:
       xtend: 4.0.2
 
   loader-utils@3.2.1: {}
+
+  local-pkg@0.4.3: {}
 
   local-pkg@0.5.0:
     dependencies:
@@ -11455,7 +11521,7 @@ snapshots:
 
   mlly@1.4.2:
     dependencies:
-      acorn: 8.11.2
+      acorn: 8.11.3
       pathe: 1.1.1
       pkg-types: 1.0.3
       ufo: 1.3.0
@@ -11824,6 +11890,8 @@ snapshots:
     dependencies:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
+
+  proxy-from-env@1.1.0: {}
 
   psl@1.9.0: {}
 
@@ -12215,7 +12283,7 @@ snapshots:
 
   strip-literal@1.3.0:
     dependencies:
-      acorn: 8.11.2
+      acorn: 8.11.3
 
   strip-literal@2.0.0:
     dependencies:
@@ -12431,7 +12499,7 @@ snapshots:
       pkg-types: 1.0.3
       scule: 1.1.1
       strip-literal: 1.3.0
-      unplugin: 1.6.0
+      unplugin: 1.10.1
     transitivePeerDependencies:
       - rollup
 
@@ -12536,8 +12604,8 @@ snapshots:
 
   unplugin@1.6.0:
     dependencies:
-      acorn: 8.11.2
-      chokidar: 3.5.3
+      acorn: 8.11.3
+      chokidar: 3.6.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.6.1
 
@@ -12715,6 +12783,10 @@ snapshots:
     dependencies:
       vue: 3.4.27(typescript@5.4.2)
 
+  vue-demi@0.14.8(vue@3.4.27(typescript@5.4.2)):
+    dependencies:
+      vue: 3.4.27(typescript@5.4.2)
+
   vue-eslint-parser@9.3.2(eslint@8.57.0):
     dependencies:
       debug: 4.3.4
@@ -12734,6 +12806,11 @@ snapshots:
       '@intlify/shared': 9.13.1
       '@vue/devtools-api': 6.5.0
       vue: 3.4.27(typescript@5.4.2)
+
+  vue-request@2.0.4(vue@3.4.27(typescript@5.4.2)):
+    dependencies:
+      vue: 3.4.27(typescript@5.4.2)
+      vue-demi: 0.14.8(vue@3.4.27(typescript@5.4.2))
 
   vue-router@4.3.2(vue@3.4.27(typescript@5.4.2)):
     dependencies:
