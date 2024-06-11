@@ -13,7 +13,7 @@
 <br/>
 
 <p align='center'>
-<a href="https://github.com/Ares-Chang/uni-vitesse/blob/master/README.md">简体中文</a> | <b>English</b>
+<a href="https://github.com/YanmaY/uni-vitesse/blob/master/README.md">简体中文</a> | <b>English</b>
 </p>
 
 <br/>
@@ -24,11 +24,11 @@ Environment configuration Copy From [Vitesse-lite](https://github.com/antfu/vite
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
-- 🗂 [File based routing](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/pages)
+- 🗂 [File based routing](https://github.com/YanmaY/uni-vitesse/tree/master/src/pages)
 
-- 📦 [Components auto importing](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
+- 📦 [Components auto importing](https://github.com/YanmaY/uni-vitesse/blob/master/src/components)
 
-- 📑 [Layout system](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/layouts)
+- 📑 [Layout system](https://github.com/YanmaY/uni-vitesse/tree/master/src/layouts)
 
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org)
 
@@ -105,14 +105,14 @@ If there is no cross-end requirement, [Vitesse-lite](https://github.com/antfu/vi
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/ares-chang/uni-vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/YanmaY/uni-vitesse/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit ares-chang/uni-vitesse my-uni-app
+npx degit YanmaY/uni-vitesse#master my-uni-app
 cd my-uni-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```

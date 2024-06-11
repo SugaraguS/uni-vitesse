@@ -13,7 +13,7 @@
 <br/>
 
 <p align='center'>
-<b>简体中文</b> | <a href="https://github.com/Ares-Chang/uni-vitesse/blob/master/README.en-US.md">English</a>
+<b>简体中文</b> | <a href="https://github.com/YanmaY/uni-vitesse/blob/master/README.en-US.md">English</a>
 </p>
 
 <br/>
@@ -24,11 +24,11 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - 就是快！
 
-- 🗂 [基于文件的约定式路由](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/pages)
+- 🗂 [基于文件的约定式路由](https://github.com/YanmaY/uni-vitesse/tree/master/src/pages)
 
-- 📦 [组件自动化加载](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components)
+- 📦 [组件自动化加载](https://github.com/YanmaY/uni-vitesse/blob/master/src/components)
 
-- 📑 [布局系统](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/layouts)
+- 📑 [布局系统](https://github.com/YanmaY/uni-vitesse/tree/master/src/layouts)
 
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 
@@ -38,7 +38,7 @@
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
-- 📥 [API 自动导入](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/composables) - 直接使用 Composition API 等
+- 📥 [API 自动导入](https://github.com/YanmaY/uni-vitesse/tree/master/src/composables) - 直接使用 Composition API 等
 
 - ✅ 使用 [Vitest](https://vitest.dev/) 进行单元和组件测试
 
@@ -105,14 +105,14 @@
 
 ### GitHub 模板
 
-[使用这个模板创建仓库](https://github.com/ares-chang/uni-vitesse/generate).
+[使用这个模板创建仓库](https://github.com/YanmaY/uni-vitesse/generate).
 
 ### 克隆到本地
 
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx degit ares-chang/uni-vitesse my-uni-app
+npx degit YanmaY/uni-vitesse#master my-uni-app
 cd my-uni-app
 pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
